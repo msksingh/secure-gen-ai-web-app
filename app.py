@@ -49,7 +49,7 @@ class UploadForm(FlaskForm):
     pdf_file = FileField(
         validators=[
             FileRequired(),
-            FileAllowed(["pdf"], "Please select a PDF."),
+            FileAllowed(["pdf"], "Please select a New PDF."),
         ],
         label="Select a PDF",
     )
